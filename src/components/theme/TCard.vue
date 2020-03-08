@@ -1,13 +1,13 @@
 <template>
-  <t-card>
-    {{test}}
-  </t-card>
+  <v-card color='primary'>
+    <slot></slot>
+  </v-card>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 @Component
 export default class App extends Vue {
-  test: string = 'test2'
+  test: string = 'test'
 }
 </script>

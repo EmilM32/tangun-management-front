@@ -40,9 +40,7 @@
       <v-container
         fluid
       >
-        <v-card>
-          <v-card-title>test</v-card-title>
-        </v-card>
+        <router-view />
       </v-container>
     </v-content>
   </v-app>
@@ -52,7 +50,7 @@
 import { Component, Vue } from 'vue-property-decorator'
 @Component
 export default class App extends Vue {
-  drawer: any = null
+  drawer: boolean = false
   get isDark () {
     return this.$vuetify.theme.dark
   }

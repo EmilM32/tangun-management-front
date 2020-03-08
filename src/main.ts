@@ -5,6 +5,12 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 
+// Tangun Components
+import TCard from "@/components/theme/TCard.vue"
+
+Vue.component("t-card", TCard)
+
+
 Vue.config.productionTip = false
 
 new Vue({
