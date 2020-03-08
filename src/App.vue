@@ -30,10 +30,18 @@
         @click.stop="drawer = !drawer"
         icon
       >
-        <v-icon v-show='drawer'>mdi-dots-vertical</v-icon>
-        <v-icon v-show='!drawer'>mdi-menu</v-icon>
+        <v-icon v-show='!drawer'>mdi-dots-vertical</v-icon>
+        <v-icon v-show='drawer'>mdi-menu</v-icon>
       </v-btn>
       <v-toolbar-title>Dashboard</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn
+        icon fab
+        @click='switchTheme'
+        color='primary'
+      >
+        <v-icon>mdi-theme-light-dark</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-content>
@@ -59,7 +67,7 @@ export default class App extends Vue {
     this.$vuetify.theme.dark = value
   }
 
-  changeTheme (): void {
+  switchTheme (): void {
     this.isDark = !this.isDark
   }
 }

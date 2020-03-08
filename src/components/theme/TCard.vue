@@ -1,5 +1,9 @@
 <template>
-  <v-card color='primary'>
+  <v-card
+    color='primary'
+    outlined
+    class='t-card'
+  >
     <slot></slot>
   </v-card>
 </template>
@@ -11,3 +15,7 @@ export default class App extends Vue {
   test: string = 'test'
 }
 </script>
+<style lang="stylus" scoped>
+.t-card
+  border-radius 7px!important
+</style>

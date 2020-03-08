@@ -1,10 +1,10 @@
 export const Colors = {
   light: {
-    primary: '#CCE6F4',
-    secondary: '#424242',
-    accent: '#82B1FF',
+    primary: '#009DDE',
+    secondary: '#C1B29F',
+    accent: '#0067BB',
     error: '#FF5252',
-    info: '#2196F3',
+    info: '#65A0B1',
     success: '#4CAF50',
     warning: '#FFC107'
   },

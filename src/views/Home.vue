@@ -1,7 +1,13 @@
 <template>
-  <t-card>
-    {{test}}
-  </t-card>
+  <div>
+    <v-row>
+      <v-col cols='3'>
+        <t-card>
+          {{test}}
+        </t-card>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script lang="ts">
