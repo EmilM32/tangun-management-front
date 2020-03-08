@@ -59,7 +59,9 @@
               :disabled='!item.active'
               @click='switchLang(item.code)'
             >
-              <v-list-item-title class='text-center'>{{ $t(`${item.i18n}`) }}</v-list-item-title>
+              <v-list-item-title class='text-center'>
+                {{ $t(`${item.i18n}`) }}
+              </v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -76,8 +78,8 @@
 
     <v-content>
       <v-container
-        fluid
         class='ma-5'
+        fluid
       >
         <router-view />
       </v-container>

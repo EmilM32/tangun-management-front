@@ -1,17 +1,15 @@
 <template>
   <div>
-    <t-card
-      color='white'
-    >
+    <v-card>
       test
-    </t-card>
+    </v-card>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 @Component
-export default class App extends Vue {
+export default class List extends Vue {
   test: string = 'test2'
 }
 </script>
