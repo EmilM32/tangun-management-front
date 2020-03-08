@@ -1,0 +1,11 @@
+{
+  "sidebar": {
+    "Home": "Dashboard",
+    "List": "List"
+  },
+  "lang": {
+    "pl": "Polish",
+    "en": "English"
+  },
+  "message": "hello i18n !!"
+}

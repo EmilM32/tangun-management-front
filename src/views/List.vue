@@ -1,12 +1,10 @@
 <template>
   <div>
-    <v-row>
-      <v-col cols='3'>
-        <t-card>
-          {{ $t('message') }}
-        </t-card>
-      </v-col>
-    </v-row>
+    <t-card
+      color='white'
+    >
+      test
+    </t-card>
   </div>
 </template>
 

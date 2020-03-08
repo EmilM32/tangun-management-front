@@ -1,0 +1,11 @@
+{
+  "sidebar": {
+    "Home": "Dashboard",
+    "List": "Lista zawodników"
+  },
+  "lang": {
+    "pl": "Polski",
+    "en": "Angielski"
+  },
+  "message": "hello i18n !!"
+}
