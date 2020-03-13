@@ -1,5 +1,5 @@
 <template>
-  <v-row justify='space-around'>
+  <v-row justify='center'>
     <v-col
       v-for="(item, i) in dashboardItem"
       :key='i'
@@ -7,8 +7,10 @@
       <t-card
         :title='item.title'
         :subtitle='item.subtitle'
-        :color='item.color'
-        :icon='item.icon'
+        :opts='cardOptions(
+          item.color,
+          item.icon
+        )'
         size='300'
       >
         {{ $t('message') }}
@@ -19,9 +21,16 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
+import { CardOpts } from './../types/index'
 @Component
 export default class App extends Vue {
-  test: string = 'test2'
+  cardOptions (color?: string, icon?: string): CardOpts {
+    const _return: CardOpts = {
+      color: color,
+      icon: icon
+    }
+    return _return
+  }
 
   get dashboardItem (): Array<object> {
     return [
@@ -32,21 +41,21 @@ export default class App extends Vue {
         icon: 'mdi-currency-usd'
       },
       {
+        title: 'dashboard.calendar',
+        subtitle: '22.03.2020',
+        color: 'primary',
+        icon: 'mdi-calendar-month'
+      },
+      {
         title: 'dashboard.gain',
         subtitle: 'subtitle',
-        color: 'success',
+        color: 'secondary',
         icon: 'mdi-currency-usd'
       },
       {
         title: 'dashboard.gain',
         subtitle: 'subtitle',
-        color: 'success',
-        icon: 'mdi-currency-usd'
-      },
-      {
-        title: 'dashboard.gain',
-        subtitle: 'subtitle',
-        color: 'success',
+        color: 'newColor',
         icon: 'mdi-currency-usd'
       }
     ]

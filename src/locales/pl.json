@@ -8,7 +8,22 @@
     "en": "Angielski"
   },
   "dashboard": {
-    "gain": "zysk"
+    "gain": "zysk",
+    "calendar": "kalendarz"
+  },
+  "common": {
+    "id": "ID",
+    "fullName": "Imię i nazwisko",
+    "firstName": "Imię",
+    "lastName": "Nazwisko",
+    "level": "Stopień",
+    "dateOfBirth": "Data urodzenia",
+    "group": "Grupa",
+    "search": "Szukaj"
+  },
+  "table": {
+    "noData": "Brak danych do wyświetlenia",
+    "noResult": "Nie znaleziono"
   },
   "message": "hello i18n !!"
 }

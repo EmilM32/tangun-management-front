@@ -1,12 +1,13 @@
 export const Colors = {
   light: {
     primary: '#009DDE',
-    secondary: '#C1B29F',
+    secondary: '#E58C8A',
     accent: '#0067BB',
     error: '#FF5252',
     info: '#65A0B1',
     success: '#4CAF50',
-    warning: '#FFC107'
+    warning: '#FFC107',
+    newColor: '#FFC107'
   },
   dark: {
     primary: '#BA324F',
@@ -15,6 +16,7 @@ export const Colors = {
     error: '#FF5252',
     info: '#2196F3',
     success: '#4CAF50',
-    warning: '#FFC107'
+    warning: '#FFC107',
+    newColor: '#FFC107'
   }
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "fullName": "fullName",
+    "level": "level",
+    "dateOfBirth": "dateOfBirth",
+    "group": "group"
+  },
+  {
+    "id": "2",
+    "fullName": "fullName",
+    "level": "level",
+    "dateOfBirth": "dateOfBirth",
+    "group": "group"
+  },
+  {
+    "id": "3",
+    "fullName": "fullName",
+    "level": "level",
+    "dateOfBirth": "dateOfBirth",
+    "group": "group"
+  },
+  {
+    "id": "4",
+    "fullName": "fullName",
+    "level": "level",
+    "dateOfBirth": "dateOfBirth",
+    "group": "group"
+  }
+]

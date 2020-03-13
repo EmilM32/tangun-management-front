@@ -8,7 +8,7 @@
       <v-list dense>
 
         <v-list-item 
-          v-for='(item, i) in sideBarItems' :key='i'
+          v-for='(item, i) in sidebarItems' :key='i'
           :to='item.name === mainComponent ? "/" : item.name'
           link>
           <v-list-item-action>
@@ -78,7 +78,6 @@
 
     <v-content>
       <v-container
-        class='ma-5'
         fluid
       >
         <router-view />
@@ -104,7 +103,7 @@ export default class App extends Vue {
     this.$vuetify.theme.dark = value
   }
 
-  get sideBarItems (): Array<object> {
+  get sidebarItems (): Array<object> {
     return [
       {
         icon: 'mdi-home',

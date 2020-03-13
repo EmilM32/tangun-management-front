@@ -1,8 +1,12 @@
 <template>
   <div class='t-card'>
     <div class="top">
-      <v-avatar tile :color='color' size='70'>
-        <v-icon dark large>{{ icon }}</v-icon>
+      <v-avatar
+        tile
+        :color='opts.color ? opts.color : "primary"'
+        size='70'
+      >
+        <v-icon dark large>{{ opts.icon }}</v-icon>
       </v-avatar>
     </div>
     <div class="bottom">
@@ -23,18 +27,16 @@
 import { Component, Vue, Prop } from 'vue-property-decorator'
 @Component
 export default class Card extends Vue {
-  @Prop() color!: string
   @Prop() title!: string
   @Prop() subtitle!: string
-  @Prop() icon!: string
   @Prop() size!: string
+  @Prop() opts!: object
 }
 </script>
 
 <style lang="stylus" scoped>
 .t-card
   position relative
-  width 100%
   .top
     position absolute
     left 1rem
