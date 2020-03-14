@@ -1,7 +1,8 @@
 {
   "sidebar": {
     "Home": "Dashboard",
-    "List": "Lista zawodników"
+    "List": "Lista zawodników",
+    "Calendar": "Kalendarz"
   },
   "lang": {
     "pl": "Polski",

@@ -47,13 +47,21 @@ export default class List extends Vue {
   }
 
   get headers (): Array<object> {
-    return [
-      { text: this.$t('common.id'), value: 'id' },
-      { text: this.$t('common.fullName'), value: 'fullName', align: 'center' },
-      { text: this.$t('common.level'), value: 'level', align: 'center' },
-      { text: this.$t('common.dateOfBirth'), value: 'dateOfBirth', align: 'center' },
-      { text: this.$t('common.group'), value: 'group', align: 'center' },
+    const columns: Array<string> = [
+      'id', 'fullName', 'level', 'dateOfBirth', 'group'
     ]
+    let tableHeaders = (columns: Array<string>): Array<object> => {
+      let temp: Array<object> = []
+      columns.forEach(el => {
+        temp.push({
+          text: this.$t(`common.${el}`),
+          value: el,
+          align: el !== 'id' ? 'center' : null
+        })
+      })
+      return temp
+    }
+    return tableHeaders(columns)
   }
 }
 </script>
